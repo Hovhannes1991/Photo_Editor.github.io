@@ -35,18 +35,8 @@ body {
 	background-color: lightblue;
 }
 
-#canvas {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	/*width: 48%;
-	height: 50vh;*/
-	border: 2px solid #ffeb3b;
-	border-radius: 5%;	
-	background-color: lightblue;
-}
 
-#canvas2 {
+#canvas, #canvas2 {
 	display: none;	
 	align-items: center;
 	justify-content: center;	

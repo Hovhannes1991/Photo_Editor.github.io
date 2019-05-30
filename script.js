@@ -49,6 +49,7 @@ function addFilter() {
     let opacity = document.getElementById("opacity").value;
     let sepia = document.getElementById("sepia").value;
     let saturate = document.getElementById("saturate").value;
+    image.style.filter = `blur(${blur}px) grayscale(${grayscale}) sepia(${sepia}) opacity(${opacity}) brightness(${brightness}) contrast(${contrast}) saturate(${saturate})`;
     canvas.style.filter = `blur(${blur}px) grayscale(${grayscale}) sepia(${sepia}) opacity(${opacity}) brightness(${brightness}) contrast(${contrast}) saturate(${saturate})`;
 
     this.parentNode.getElementsByTagName("p")[0].innerHTML = this.value;
@@ -64,7 +65,8 @@ function reset() {
     document.getElementById("opacity").value = 1;
     document.getElementById("sepia").value = 0;
     document.getElementById("saturate").value = 1;
-
+    
+    image.style.filter = `blur(0px) grayscale(0) sepia(0) opacity(1) brightness(1) contrast(1) saturate(1)`;
     canvas.style.filter = `blur(0px) grayscale(0) sepia(0) opacity(1) brightness(1) contrast(1) saturate(1)`;
     ctx.filter = `blur(0px) grayscale(0) sepia(0) opacity(1) brightness(1) contrast(1) saturate(1)`;
     canvas2.style.filter = `blur(0px) grayscale(0) sepia(0) opacity(1) brightness(1) contrast(1) saturate(1)`;
@@ -89,7 +91,7 @@ function saveImage() {
     ctx2.drawImage(canvas, 0, 0);
     var link = document.getElementById("saveImage");
     link.href = canvas2.toDataURL();
-    link.download = "mypainting.png";
+    link.download = "untitled.png";
 }
 
 
