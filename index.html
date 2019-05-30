@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Editor</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>	
+	<div class="load_reset_save">
+      <input type="file" name="file" id="file" accept="image/*">
+	  <input type="reset" name="reset" id="reset" value="reset">	  
+	  <a id="saveImage">Save</a>
+	</div>  	  
+   <div class="container">   	  
+	  <div class="before"></div>	  
+	  <canvas id="canvas"></canvas>
+	  <canvas id="canvas2"></canvas>
+
+	  <div class="controlers_blok">
+	  	<div class="controler">	  	
+	  		<label for="blur">Blur</label>
+	  		<input id="blur" type="range" min="0" max="10" name="blur" value="0" step="0.1">
+	  		<p id="blur_value">0</p>
+	  	</div>
+
+	  	<div class="controler">
+	  		<label for="grayscale">Grayscale</label>
+	  		<input id="grayscale" type="range" min="0" max="1" name="blur" value="0" step="0.1">
+	  		<p id="grayscale_value">0</p>
+	  	</div>
+
+	  	<div class="controler">
+	  		<label for="brightness">Brightness</label>
+	  		<input id="brightness" type="range" min="0" max="1" name="blur" value="1" step="0.1">
+	  		<p id="brightness_value">1</p>
+	  	</div>
+
+	  	<div class="controler">
+	  		<label for="contrast">Contrast</label>
+	  		<input id="contrast" type="range" min="0" max="2" name="blur" value="1" step="0.1">
+	  		<p id="contrast_value">1</p>
+	  	</div>
+
+	  	<div class="controler">
+	  		<label for="opacity">Opacity</label>
+	  		<input id="opacity" type="range" min="0" max="1" name="blur" value="1" step="0.1">
+	  		<p id="opacity_value">1</p>
+	  	</div>
+
+	  	<div class="controler">
+	  		<label for="sepia">Sepia</label>
+	  	     <input id="sepia" type="range" min="0" max="1" name="blur" value="0" step="0.1">
+	  	     <p id="sepia_value">0</p>
+	  	</div>
+
+	  	<div class="controler">
+	  		<label for="saturate">Saturate</label>
+	         <input id="saturate" type="range" min="0" max="1" name="blur" value="1" step="0.1">
+	         <p id="saturate_value">1</p>
+	  	</div>
+	  	
+	  </div>
+   </div>	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

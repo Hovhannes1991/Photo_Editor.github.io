@@ -1,0 +1,126 @@
+body {
+	background-color: #804751;
+}
+
+
+.container {
+	display: flex;
+	background-color: #7e9098;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 1%;
+}
+
+.load_reset_save {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+	width: 95vw;
+	margin: auto;
+	margin-bottom: 1%;
+	padding: auto;
+	color: lightblue;	
+}
+
+.before {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 48%;
+	height: 50vh;
+	border: 2px solid #ffeb3b;
+	border-radius: 5%;	
+	margin-right: 2%;
+	background-color: lightblue;
+}
+
+#canvas {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*width: 48%;
+	height: 50vh;*/
+	border: 2px solid #ffeb3b;
+	border-radius: 5%;	
+	background-color: lightblue;
+}
+
+#canvas2 {
+	display: none;	
+	align-items: center;
+	justify-content: center;	
+	border: 2px solid #ffeb3b;
+	border-radius: 5%;	
+	background-color: lightblue;
+}
+
+img {
+	max-width: 95%;
+	max-height: 50vh;	
+	margin-right: 2%;
+	background-color: lightblue;	
+}
+
+#saveImage {
+    border: 2px solid green;
+    background-color: white;
+    width: 10%;
+    color: green;
+   text-align: center;
+}
+
+
+.controlers_blok {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;	
+	width: 98%;
+	border: 2px solid #ffeb3b;	
+	height: 40vh;
+	margin-top: 1%;
+	background-color: lightblue;
+}
+
+
+.controler {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 200px;
+	height: 15%;	
+	margin: 5px;
+	color: green;
+	font-size: 1.5rem;
+	background-color: white;
+	border: 1px solid green;
+	text-align: center;	
+}
+
+.controler > input {
+	color: green;
+	text-align: center;
+	width: 50%;
+}
+
+@media only screen and (max-width: 470px){
+	.controler {	
+	    width: 150px;
+	    height: 15%;	
+	    margin: 2px;	
+	    font-size: 1rem;	
+    }
+
+    .before, canvas {
+    	width: 35%;
+    	height: 20vh;
+    }
+}
+
+@media only screen and (max-width: 340px){
+	.controler {	
+	    width: 140px;
+	    height: 10%;	    
+    }    
+}
