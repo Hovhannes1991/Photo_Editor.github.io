@@ -85,21 +85,12 @@ function reset() {
 
 document.getElementById("saveImage").addEventListener("click", saveImage);
 
-function saveImage() {    
+function saveImage() {
     var computedStyle = getComputedStyle(canvas).filter;
     ctx2.filter = computedStyle;
     ctx2.drawImage(canvas, 0, 0);
     var link = document.getElementById("saveImage");
-    link.href = canvas2.toDataURL();
-    link.download = "untitled.png";
+    var image_type = file.files[0].type;  //  to know image is png or jpg    
+    link.href = canvas2.toDataURL(image_type);   
+    link.download = "HK_Photo_Editor";
 }
-
-
-// function saveImage() {    
-//     var computedStyle = getComputedStyle(canvas).filter;
-//     ctx.filter = computedStyle;
-//     ctx.drawImage(canvas, 0, 0);
-//     var link = document.getElementById("saveImage");
-//     link.href = canvas.toDataURL();
-//     link.download = "mypainting.png";
-// }
