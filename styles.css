@@ -22,10 +22,8 @@ header {
 	display: none;
 }
 
-.before {
+.before {	
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
 	border: 2px solid green;
 	background-color: grey;
 	height: 100%;
@@ -33,7 +31,9 @@ header {
 
 
 img {
-	max-width: 100%;	
+	display: block;
+	max-width: 100%;
+	margin: auto;	
 }
 
 #saveImage {
